@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 from calculator_adapter import run
 
 
@@ -11,3 +12,5 @@ def test_two():
 ###
 
 print("All tests passed!")
+if os.environ.get("OUTPUT_RUNS") == "True":
+    print("TEST RUN:")
